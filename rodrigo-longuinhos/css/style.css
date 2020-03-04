@@ -23,7 +23,7 @@ background: linear-gradient(to right,#ce2e3c,#da6709);}
 .menu li a:hover {border:1px solid #da6709;}
 
 /* BANNER */
-.banner {width: 100%; float: left; text-align: center; padding: 3% 4%; background: url(../img/starwars-backdrop.jpg) no-repeat fixed;}
+.banner {width: 100%; text-align: center; padding: 3% 4%; background: url(../img/starwars-backdrop.jpg) no-repeat; background-size: cover;background-position: center;}
 .titulo {width: 100%;}
 .titulo h2 {font-size: 2.5em; color:#ff0; font-weight: 700;}
 .titulo h3 {font-size: 1.5em; color:#fff; line-height: 1.3em;}
