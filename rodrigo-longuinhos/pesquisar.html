@@ -26,7 +26,7 @@
             <a class="btn-close"><i class="fa fa-times"></i></a>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="catalogo.html?id=1">Catálogo</a></li>
                 <li><a href="pesquisar.html">Pesquisar</a></li>
                 <li><a href="resultado.html">Resultado</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
@@ -37,24 +37,29 @@
         <div class="pesquisar">
             <h2>Pesquisar</h2>
             <form>
-                <input type="text" name="pesquisar" placeholder="Personagem">
-                <button> Pesquisar </button>
+                <select name="pesquisar" id="pesquisar">
+                    <option value="0" selected>Selecione personagem</option>
+                </select>
+                <button id="btPesquisar" name="btPesquisar" onclick=""> Pesquisar </button>
             </form>
-        </div>
+        </div>   
         <div class="titulo">
             <h3>All the Star Wars data you've ever wanted:
                 Planets, Spaceships, Vehicles, People, Films and Species
                 From all SEVEN Star Wars films
                 Now with The Force Awakens data!</h3>
         </div>
-    </div>    
-    <script>
-        $(".btn-menu").click(function(){
-            $(".menu").show();
-        })
-        $(".btn-close").click(function(){
-            $(".menu").hide();
-        })
-    </script>
+    </div>
+    <footer class="rodape">
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p class="copyright">Copyright Desafio mLearn 2020. Todos os direitos reservados</p>
+    </footer> 
+    <script type="text/javascript" src="js/script.js"></script>   
 </body>
 </html>

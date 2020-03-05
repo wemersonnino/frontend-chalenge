@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/favicon.png">
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 </head>
 <body>
     <header class="cabecalho">
@@ -34,13 +33,13 @@
         </nav>
     </header>
     <div class="banner">
-        <div class="pesquisar">
+        <div class="catalogo">
             <h2>Catálogo</h2>
             <form>
-                <input type="text" name="pesquisar" placeholder="name" disabled>
-                <input type="text" name="pesquisar" placeholder="species" disabled>
-                <input type="text" name="pesquisar" placeholder="birth_year" disabled>
-                <button> Voltar </button>
+                <input type="text" name="name" placeholder="name" disabled>
+                <input type="text" name="species" placeholder="species" disabled>
+                <input type="text" name="birth_year" placeholder="birth_year" disabled>
+                <button name="btNext" id="btNext" onclick=""> Próximo </button>
             </form>
         </div>
         <div class="titulo">
@@ -49,14 +48,19 @@
                 From all SEVEN Star Wars films
                 Now with The Force Awakens data!</h3>
         </div>
-    </div>    
-    <script>
-        $(".btn-menu").click(function(){
-            $(".menu").show();
-        })
-        $(".btn-close").click(function(){
-            $(".menu").hide();
-        })
-    </script>
+    </div> 
+    <footer class="rodape">
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p class="copyright">Copyright Desafio mLearn 2020. Todos os direitos reservados</p>
+    </footer>  
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
